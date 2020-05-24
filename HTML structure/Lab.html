@@ -8,54 +8,220 @@
 </head>
 
 <body>
-
+    <h3>ให้หาว่า attribute ของ tag ต่อไปนี้มีอะไรบ้างและใช้งานอย่างไร</h3>
     <table>
         <thead>
             <tr>
-                <th>1.ชื่อ Tag</th>
-                <th>2.Attribute</th>
-                <th>3.การใช้งาน</th>
+                <th>ชื่อ Tag</th>
+                <th>Attribute</th>
+                <th>การใช้งาน</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
                 <td>&lt;h&gt;</td>
-                <td>เทสสสสสนนนนนนนนนนนนนนน</td>
+                <td>title,id</td>
+                <td>title : ระบุข้อมูลเพิ่มเติมเกี่ยวกับองค์ประกอบ
+                    <br>id : เป็นการนำค่า id ที่เราสร้างไว้มาเรียกใช้งาน </td>
+                <td></td>
             </tr>
             <tr>
                 <td>&lt;p&gt;</td>
+                <td>style</td>
+                <td>style : สามารถเรียกใช้ CSS แบบอินไลน์ได้
+                </td>
             </tr>
             <tr>
                 <td>&lt;div&gt;</td>
+                <td>class</td>
+                <td>class : สามารถเรียกใช้ class ที่เราสร้างไว้มาเรียกใช้งาน
+                </td>
             </tr>
             <tr>
                 <td>&lt;img&gt;</td>
+                <td>src,alt</td>
+                <td>src : ระบุตำแหน่งของรูป
+                    <br>alt : ระบุข้อความหรือคำอธิบายของรูปภาพ </td>
             </tr>
             <tr>
                 <td>&lt;a&gt;</td>
+                <td>href,rel</td>
+                <td>href : ระบุ URL ของหน้าที่ลิงก์ไป
+                    <br>rel : ระบุความสัมพันธ์ระหว่างเอกสารปัจจุบันและเอกสารที่เชื่อมโยง </td>
             </tr>
             <tr>
                 <td>&lt;ul&gt;</td>
+                <td>style</td>
+                <td>style : สามารถเรียกใช้ CSS แบบอินไลน์ได้
             </tr>
             <tr>
                 <td>&lt;ol&gt;</td>
+                <td>start</td>
+                <td>start : สามารถะบุค่าเริ่มต้นของรายการ
             </tr>
             <tr>
                 <td>&lt;table&gt;</td>
+                <td>style</td>
+                <td>style : สามารถเรียกใช้ CSS แบบอินไลน์ได้
             </tr>
             <tr>
                 <td>&lt;form&gt;</td>
+                <td>action,method</td>
+                <td>action : ระบุตำแหน่งที่จะส่งข้อมูลแบบฟอร์มเมื่อส่งแบบฟอร์ม
+                    <br>method : ระบุวิธี HTTP ที่จะใช้เมื่อส่งแบบฟอร์มข้อมูล</td>
             </tr>
             <tr>
                 <td>&lt;button&gt;</td>
+                <td>type</td>
+                <td>type : ระบุประเภทของปุ่ม</td>
             </tr>
 
+        </tbody>
+    </table>
+
+    <table>
+        <h3>ให้หาความเหมือนและความแตกต่างระหว่าง 2 tag ที่กำหนดให้</h3>
+        <thead>
+            <th>ชื่อ Tag</th>
+            <th>ความเหมือน</th>
+            <th>ความต่าง</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;hr&gt; และ &lt;br&gt;</td>
+                <td>เป็นการขึ้นบรรทัดใหม่</td>
+                <td>hr จะเป็นการขีดเส้น ส่วน br จะขึ้นบรรทัดใหม่เลย</td>
+            </tr>
+            <tr>
+                <td>&lt;ul&gt; และ &lt;ol&gt;</td>
+                <td>จะเป็นการสร้างลิสต์รายการ</td>
+                <td>ul จะมีจุดข้างหน้ารายการ ส่วน ol จะมีเลขลำดับข้างหน้ารายการ</td>
+            </tr>
+            <tr>
+                <td>&lt;select&gt; &lt;checkbox&gt;และ &lt;radio button&gt;</td>
+                <td>จะเป็นการเลือกลิสต์รายการ</td>
+                <td>select จะเป็นแบบ drop-down checkbox เป็นการเลือกแบบการติ๊กถูก radio button
+                    เป็นการเลือกแบบการติ๊กที่วงกลม</td>
+            </tr>
+            <tr>
+                <td>&lt;div&gt; และ &lt;span&gt;</td>
+                <td>เป็นการจัดกลุ่มข้อมูล</td>
+                <td>div จะเป็นแบบ block เลเวล ส่วน span จะเป็นแบบ inline เลเวล </td>
+            </tr>
+            <tr>
+                <td>&lt;select&gt; &lt;checkbox&gt;และ &lt;radio button&gt;</td>
+                <td>จะเป็นการเลือกลิสต์รายการ</td>
+                <td>select จะเป็นแบบ drop-down checkbox เป็นการเลือกแบบการติ๊กถูก radio button
+                    เป็นการเลือกแบบการติ๊กที่วงกลม</td>
+            </tr>
+            <tr>
+                <td>&lt;script&gt; และ &lt;style&gt;</td>
+                <td>เป็นการเรียกใช้ funtion ที่เรากำหนด</td>
+                <td>script เรียกใช้ javascript ส่วน style เรียกใช้ css</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <h3>ให้หาว่า input type มีอะไรบ้างแต่ละ type แตกต่างกันอย่างไร</h3>
+    <table>
+        <thead>
+            <th>ประเภท</th>
+            <th>คำอธิบาย</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>button</td>
+                <td>เป็นปุ่มกด</td>
+            </tr>
+            <tr>
+                <td>checkbox</td>
+                <td>เป็นกล่องให้กดเลือก</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>เป็นสีให้เลือก</td>
+            </tr>
+            <tr>
+                <td>date</td>
+                <td>เป็นวันที่ให้เลือก</td>
+            </tr>
+            <tr>
+                <td>datetime-local</td>
+                <td>เป็นวันที่และเวลาให้เลือก</td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>เป็นช่องให้กรอก email</td>
+            </tr>
+            <tr>
+                <td>file</td>
+                <td>เป็นช่องให้เลือก file</td>
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td>เป็นช่องที่ซ่อน</td>
+            </tr>
+            <tr>
+                <td>image</td>
+                <td>เป็นช่องที่เลือกรูปภาพ</td>
+            </tr>
+            <tr>
+                <td>month</td>
+                <td>เป็นช่องที่เลือกเดือน</td>
+            </tr>
+            <tr>
+                <td>number</td>
+                <td>เป็นช่องให้เลือกตัวเลข</td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>เป็นช่องให้กรอก password</td>
+            </tr>
+            <tr>
+                <td>radio</td>
+                <td>เป็นช่องให้ติ๊กเลือก</td>
+            </tr>
+            <tr>
+                <td>range</td>
+                <td>เป็นช่องที่สามารถเลือกค่าโดยการเลื่อน ปุ่ม</td>
+            </tr>
+            <tr>
+                <td>reset</td>
+                <td>ปุ่ม reset</td>
+            </tr>
+            <tr>
+                <td>search</td>
+                <td>เป็นช่องเอาไว้ค้นหา</td>
+            </tr>
+            <tr>
+                <td>submit</td>
+                <td>เป็นปุ่มยืนยัน</td>
+            </tr>
+            <tr>
+                <td>tel</td>
+                <td>เป็นช่องให้กรอก เบอร์</td>
+            </tr>
+            <tr>
+                <td>text</td>
+                <td>เป็นช่องให้กรอกข้อความ</td>
+            </tr>
+            <tr>
+                <td>time</td>
+                <td>เป็นช่องให้เลือกเวลา</td>
+            </tr>
+            <tr>
+                <td>url</td>
+                <td>เป็นช่องให้กรอกลิงค์</td>
+            </tr>
+            <tr>
+                <td>week</td>
+                <td>เป็นช่องให้เลือกสัปดาห์</td>
+            </tr>
         </tbody>
     </table>
 
 </body>
 
 </html>
-
-<!-- <h>, <p> , <div> , <img> , <a> , <img>, <ul>, <ol>, <table> , <form>, <button> -->

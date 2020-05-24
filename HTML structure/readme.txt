@@ -8,3 +8,17 @@ kongphop lalun
 3. ให้หาว่า input type มีอะไรบ้างแต่ละ type แตกต่างกันอย่างไร
 โดยให้แสดงข้อมูลแบบตาราง โดยใช้ tag table ใน HTML โดย ให้ตั้งชื่อไฟล์ว่า
 Lab.HTML, และมีชื่อบนตารางตามข้อดังนี้ 1. attribute 2.differentiation tag 3. input type
+
+Lab เสริม
+ให้ทดลอง ครอบตัวหนังสือด้วยแท๊ก และอธิบายว่าแต่ละ tag ปรับตัวหนังสืออย่างไร
+<strong> </strong>
+<label> </label>
+<del> </del>
+<b> </b>
+<em> </em>
+<mark> </mark>
+<i> </i>
+<sub> </sub>
+<sup> </sup>
+เช่น <p> lorem …… <strong> text …… </strong> ……</p>
+
