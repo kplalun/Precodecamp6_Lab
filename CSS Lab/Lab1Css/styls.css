@@ -1,0 +1,116 @@
+.tooltip{
+    position: relative; 
+    background-color: brown;
+    border: 2px solid black;
+    display: inline-block; /*กำหนดให้ block element เปลี่ยนเป็น inline element เพื่อไม่ต้องการให้สีขึ้นจนสุดแถว*/   
+    
+}
+.tooltext{
+    visibility: hidden; /*กำหนดให้ซ่อน tooltext ไว้ก่อน*/
+}
+
+.tooltip .tooltext{
+    position: absolute ; /*แสดงผลเป็นอิสระ และ*/
+    top: 20px; /*ห่างจากบน*/
+    right: 15px;  /*ห่างจากขวา*/
+    background-color: #F5B041;
+    border-radius: 50px; /*ความโค้งเส้นขอบ*/
+  
+}
+
+.tooltip:hover .tooltext /*เมื่อเมาส์เลื่อนผ่าน*/
+{
+    visibility: visible; /*เมื่อเมาส์เลื่อนผ่านให้แสดงผล  */  
+    z-index: +1; /*กำหนดให้สแดงผลอยู่ข้างหน้า*/     
+}
+
+.pagination
+{
+    display: inline-block;
+}
+.pagination a
+{
+    background-color: rgb(118, 171, 221);
+    color: black; 
+    padding: 30px 5px; /*ข้อความข้างในให้อยู่ห่างบน-และล่าง 30px ซ้ายและขวส 5 px*/
+    border-radius: 6px;
+    float: left; /*จัดตำแหน่งรายการให้เรียงลำดับจากซ้ายไปขวาหรือขวาไปซ้าย*/
+    text-decoration: none;  /* ลบขีดเส้นใต้ข้อความเนื่องจากค่าเริ่มต้น จะมีเส้นใต้ */   
+}
+.pagination a.active /*เมื่อเมาส์เลื่อนผ่านข้อความที่เซ็ท active*/
+{
+    background-color: darkgreen; /*ให้เปลี่ยนสีพื้นหลังเป็น*/
+    color: white; /*ให้เปลี่ยนสีเป็น*/
+}
+.pagination a:hover:not(.active) /*เมื่อเมาส์เลื่อนผ่านข้อความที่ไม่ได้เซ็ท active*/
+{
+    background-color: wheat; /*ให้เปลี่ยนสีพื้นหลังเป็น*/
+}
+
+
+
+.navagation ul
+{
+ 
+    list-style-type: none; /*เซ็ตให้ list ไม่มีเอฟเฟคจุดอยู่ข้างหน้า */
+    margin: 0; /*เซ็ตให้ margin เริ่มต้นเป็น 0 */
+    padding: 0;/*เซ็ตให้ panding เริ่มต้นเป็น0 */
+    width: 200px; /*เซ็ตให้ความกว้างมีขาด 200 px */
+     background-color: salmon;    
+ 
+}
+.navagation ul a
+{  
+    
+    display: block;
+    color: white; /*ให้เปลี่ยนสีเป็น*/
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+.navagation a:hover 
+{
+    background-color: rgb(122, 72, 72);
+    display: block;
+}
+
+.dropdown ul
+{ 
+    width: 200px;
+    list-style: none;
+    background-color: sienna;
+    text-align: center;
+    padding: 0;
+    margin: 0; 
+    
+}
+
+.dropdown a
+{
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    transition: .5s;
+}
+.dropdown a:hover
+{
+    background-color: skyblue;
+    
+}
+.dropdown li ul
+{
+    font-size: 10px;
+    position: absolute;
+    display: none;
+    
+}
+.dropdown li:hover ul
+{
+    font-size: 10px;
+    display: block;
+}
+
+
+
+
+

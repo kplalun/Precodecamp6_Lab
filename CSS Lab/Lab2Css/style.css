@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.containner
+{
+    
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+header
+{
+max-width: 100%;;
+background-color:#fa1e5b;
+}
+
+
+.nav-gridcontainer{
+
+display: grid;
+grid-template-columns: 250px 1fr;
+height: 100px;
+
+
+}
+
+.logo
+{
+color: lightcoral;
+margin: 20px;
+
+}
+
+.logo a{
+    text-decoration: none;  
+    text-transform: uppercase;
+    list-style: none;
+    color: white;
+}
+
+.listMenu
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+ul.listMenu
+{ 
+    padding: 20px;
+    list-style: none;   
+}
+
+ul.listMenu a{
+    text-decoration: none;
+    color: white;  
+}
+/**------------------------------------------------------*/
+.content-containner
+{  
+    width: 100%;  
+    height: 760px;
+    
+}
+
+.content-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;     
+}
+.contentleft
+{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
+    
+      
+}
+.contentright
+{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    
+}
+
+.contentLItem1,
+.contentLItem2,
+.contentLItem3,
+.contentLItem4,
+.contentLItem5,
+.contentLItem6
+{
+    height: 370px;
+    border: 2px solid black; 
+    background-color: aqua; 
+}
+
+
+.contentRItem1,
+.contentRItem2,
+.contentRItem3
+{
+    border: 2px solid black; 
+    background-color: blueviolet;
+    
+}
+
+.footer-gridcontainner{
+    width: 100%;
+    border: 5px solid peru;
+}
